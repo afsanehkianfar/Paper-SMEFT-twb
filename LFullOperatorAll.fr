@@ -13,7 +13,7 @@ M$Information = {Authors -> {"A.Kianfar"},
              Date -> "01. 24. 2025",
              Institutions -> {"IPM"},
              Emails -> {"akianfar@ipm.ir"}};
-             (*URLs -> "http://feynrules.phys.ucl.ac.be"};*)
+             (*URLs -> "https://github.com/afsanehkianfar/Paper-SMEFT-twb"};*)
 
 FeynmanGauge = False;
 
@@ -367,7 +367,6 @@ LC2q2H4D := Block[{ii,jj,kk,ll,mm,nn,pp,cc,oo,tt,sp,sp1,mu,lthu3,lC2q2H4D},
 
 
 (* ************************************************************************************************ *)
-(*** add Index[SU2W,ii] to recognise pauli matrix  ***)
 
 LC3q2H4D := Block[{ii,jj,kk,ll,mm,nn,pp,cc,oo,tt,sp,sp1,mu,lthu4,lC3q2H4D},
 
@@ -386,7 +385,6 @@ LC3q2H4D := Block[{ii,jj,kk,ll,mm,nn,pp,cc,oo,tt,sp,sp1,mu,lthu4,lC3q2H4D},
 ]; 
 
 (* ************************************************************************************************ *)
-(***HC add to HC[ Phibar[ll] Eps[jj,ll]] DC[Phi[jj], mu] -  HC[DC[Phibar[ll],mu] Eps[jj,ll]] Phi[jj] becuse Q conservation, when i check i saw that in phibar i need component to be comjugate***)
 
 LCudH4D := Block[{sp,sp1, cc, ll, kk, mu, jj, lthu5, lCudH4D},
    lthu5 = I * (uRbar[sp, 3, cc].dR[sp1, 3, cc]) Ga[mu,sp,sp1] ( HC[ Phibar[ll] Eps[jj,ll]] DC[Phi[jj], mu] -  HC[DC[Phibar[ll],mu] Eps[jj,ll]] Phi[jj] ) (Phibar[kk] Phi[kk]) * CudH4D;
